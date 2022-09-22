@@ -1,0 +1,6 @@
+.github/
+.idea/
+README.md
+LICENSE
+.gitignore
+*.iml
