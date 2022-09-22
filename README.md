@@ -1,2 +1,2 @@
-# graalvm-amazonlinux-builder-image
-Use these images to build spring native functions for AWS Lambda
+# graalvm-amazonlinux
+Use this images to build amazonlinux2 for java native-image applications
