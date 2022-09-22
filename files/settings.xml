@@ -20,7 +20,7 @@ Licensed to Muhammad Hamadto
   xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
   <profiles>
     <profile>
-      <id>spring-native-demo</id>
+      <id>spring-native</id>
       <repositories>
         <repository>
           <id>spring-releases</id>
@@ -39,6 +39,6 @@ Licensed to Muhammad Hamadto
     </profile>
   </profiles>
   <activeProfiles>
-    <activeProfile>spring-native-demo</activeProfile>
+    <activeProfile>spring-native</activeProfile>
   </activeProfiles>
 </settings>
