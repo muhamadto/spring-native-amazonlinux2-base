@@ -1,2 +1,2 @@
 # graalvm-amazonlinux
-Use this images to build amazonlinux2 for java native-image applications
+Use this image as a base for building amazonlinux2 images for java native-image applications
