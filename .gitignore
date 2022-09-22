@@ -1,0 +1,26 @@
+# Intellij IDEA
+.idea/
+*.iml
+
+# NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+
+# VS Code
+.vscode/
+
+# eclise
+.classpath
+.project
+.settings/
+
+# windows
+Thumbs.db
+
+# macOS
+.DS_Store
+
+# linux
+*~
