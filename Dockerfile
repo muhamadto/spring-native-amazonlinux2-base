@@ -16,7 +16,7 @@
 #   limitations under the License.
 
 
-FROM amazonlinux:2 AS graalvm-java11-aws-lambda-builder
+FROM amazonlinux:2 AS graalvm-java11-builder
 MAINTAINER Muhammad Hamadto <https://github.com/muhamadto>
 
 LABEL Description="This is an image that builds java native-image in amazonlinux2 architecture" 
