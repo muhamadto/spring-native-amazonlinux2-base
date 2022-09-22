@@ -17,11 +17,9 @@
 
 
 FROM amazonlinux:2 AS graalvm-java11-aws-lambda-builder
-MAINTAINER Muhammad Hamadto <muhamadto@gmail.com>
+MAINTAINER Muhammad Hamadto <https://github.com/muhamadto>
 
 LABEL Description="This is an image that builds java native-image in amazonlinux2 architecture" 
-LABEL Vendor="Muhammad Hamadto" 
-LABEL Version="1.0"
 
 
 ENV JAVA_VERSION=11
