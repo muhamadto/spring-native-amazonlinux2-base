@@ -1,5 +1,5 @@
 FROM amazonlinux:2 AS graalvm-java11-aws-lambda-builder
-MAINTAINER Qantas Loyalty TechOps <dl-loy-it-techops@qantasloyalty.com>
+MAINTAINER Muhammad Hamadto <muhamadto@gmail.com>
 
 ENV JAVA_VERSION=11
 ENV GRAALVM_VERSION=21.1.0
