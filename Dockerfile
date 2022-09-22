@@ -20,8 +20,8 @@ FROM amazonlinux:2 AS spring-native-aws-lambda-java11-builder-base
 
 LABEL Description="This is a base builder image for building spring-native AWS Lambda function in amazonlinux2 architecture"
 
-ENV JAVA_VERSION=17
-ENV GRAALVM_VERSION=22.2.0
+ENV JAVA_VERSION=11
+ENV GRAALVM_VERSION=21.1.0
 ENV FILE_NAME=graalvm-ce-java${JAVA_VERSION}-linux-amd64-${GRAALVM_VERSION}.tar.gz
 ENV JAVA_HOME=/opt/graalvm-ce-java${JAVA_VERSION}-${GRAALVM_VERSION}
 
