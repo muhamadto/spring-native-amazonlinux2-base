@@ -13,7 +13,7 @@
 #   See the License for the specific language governing permissions and
 #   limitations under the License.
 
-FROM amazonlinux:2 AS spring-native-aws-lambda-bussssilder-java11-base
+FROM amazonlinux:2 AS spring-native-amazonlinux2-java11-base
 
 LABEL Description="This is a base builder image for building spring-native AWS Lambda function in amazonlinux2 architecture"
 
