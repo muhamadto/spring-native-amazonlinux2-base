@@ -9,7 +9,7 @@ Example Usage:
 ```
 FROM ghcr.io/muhamadto/spring-native-amazonlinux2-base-java11:latest AS spring-native-aws-lambda-builder-java11
 
-COPY . /opt/build
+COPY --chown=${USER_NAME}:${GROUP_NAME} . /opt/build
 
 RUN ./mvnw -ntp -Pnative package -DskipTests
 ```

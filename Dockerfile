@@ -50,6 +50,6 @@ RUN chown -R ${USER_NAME}:${GROUP_NAME} /opt/build
 USER ${USER_NAME}
 RUN mkdir /home/${USER_NAME}/.m2
 RUN chown -R ${USER_NAME}:${GROUP_NAME} /home/${USER_NAME}/.m2
-COPY files/settings.xml /home/${USER_NAME}/.m2/settings.xml
+COPY --chown=${USER_NAME}:${GROUP_NAME} files/settings.xml /home/${USER_NAME}/.m2/settings.xml
 
 WORKDIR /opt/build
