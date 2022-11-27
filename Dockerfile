@@ -15,17 +15,17 @@
 
 FROM amazonlinux:2 AS spring-native-amazonlinux2-java17-base
 
-LABEL Description="This is a base builder image for building spring-native AWS Lambda function in amazonlinux2 architecture"
+LABEL Description="This is a base image for building spring-native AWS Lambda function in amazonlinux2 architecture"
 
 ENV JAVA_VERSION=17
 ENV GRAALVM_VERSION=22.2.0
 ENV FILE_NAME=graalvm-ce-java${JAVA_VERSION}-linux-amd64-${GRAALVM_VERSION}.tar.gz
 ENV JAVA_HOME=/opt/graalvm-ce-java${JAVA_VERSION}-${GRAALVM_VERSION}
 
-ENV GROUP_NAME=builders
+ENV GROUP_NAME=automation
 ENV GROUP_ID=1000
 
-ENV USER_NAME=githubactions
+ENV USER_NAME=ci
 ENV USER_ID=1000
 
 WORKDIR /opt
@@ -43,7 +43,7 @@ RUN tar zxvf ${FILE_NAME} && rm -f ${FILE_NAME}
 RUN ${JAVA_HOME}/bin/gu install native-image
 
 RUN groupadd -g ${GROUP_ID} ${GROUP_NAME}
-RUN useradd -c "Builders user" -d /home/${USER_NAME} -u ${USER_ID} -g ${GROUP_ID} -m ${USER_NAME}
+RUN useradd -c "CI user" -d /home/${USER_NAME} -u ${USER_ID} -g ${GROUP_ID} -m ${USER_NAME}
 
 RUN chown -R ${USER_NAME}:${GROUP_NAME} /opt/build
 
